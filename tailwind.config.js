@@ -15,6 +15,9 @@ module.exports = {
     extend: {
       colors: {
         teal: colors.teal,
+        gray: {
+          850: '#222',
+        },
       },
       opacity: {
         10: '0.1',

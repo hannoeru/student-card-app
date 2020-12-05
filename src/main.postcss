@@ -9,6 +9,9 @@ body,
   width: 100vw;
   margin: 0;
   padding: 0;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
 
 html.dark {
@@ -34,6 +37,7 @@ html.dark {
 
 #nprogress {
   pointer-events: none;
+  padding-top: env(safe-area-inset-top);
 
   .bar {
     @apply bg-teal-600 opacity-75;

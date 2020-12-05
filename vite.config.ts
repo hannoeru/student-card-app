@@ -48,8 +48,10 @@ const config: UserConfig = {
     // https://github.com/antfu/vite-plugin-pwa
     VitePWA({
       manifest: {
-        name: 'Vitesse',
-        short_name: 'Vitesse',
+        name: 'Student Card',
+        short_name: 'Student Card',
+        start_url: 'http://192.168.21.8:3333/',
+        display: 'standalone',
         icons: [
           {
             src: '/pwa-192x192.png',
@@ -62,6 +64,9 @@ const config: UserConfig = {
             type: 'image/png',
           },
         ],
+      },
+      workbox: {
+        navigateFallback: 'index.html',
       },
     }),
   ],
