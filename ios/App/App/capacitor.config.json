@@ -1,0 +1,17 @@
+{
+  "appId": "co.hanlee.student",
+  "appName": "student-card",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "server": {
+    "url": "http://192.168.21.8:3333",
+    "cleartext": true
+  },
+  "cordova": {}
+}
